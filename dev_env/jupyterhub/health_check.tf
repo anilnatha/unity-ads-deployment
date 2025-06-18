@@ -9,6 +9,7 @@ resource "aws_ssm_parameter" "jupyter_health_url" {
     componentCategory = "development"
     componentName  = "Jupyterhub"
     componentType  = "ui"
+    isPortalIntegrated = false
   })
 
   provisioner "local-exec" {
